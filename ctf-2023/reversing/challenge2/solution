@@ -1,0 +1,8 @@
+# Solved
+
+# Just ran an ltrace on the package and giving execute permission.
+# Spitted the HTB flag
+
+# Note not working on M1 M2 macs. ltrace wont work on amd platform 
+# docker run --platform linux/x86_64 <image>
+# docker build --platform linux/x86_64 .

@@ -1,0 +1,10 @@
+# I could not solve. 
+
+# Used radare2 r2 to look at the dissembly but could not solve
+
+# https://github.com/radareorg/radare2
+
+Commands
+pd
+address 
+r2

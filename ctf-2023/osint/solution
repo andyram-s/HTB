@@ -1,0 +1,15 @@
+# Challenge 1
+# Start with searching the id in ostint tools
+
+https://twitter.com/sam4nexpl01t3r
+https://sam4nexpl01t3r.blogspot.com/
+https://sam4nexpl01t3r.blogspot.com/2023/02/find-my-cv-here.html
+https://drive.google.com/file/d/1n0kXyt49Qxf-jdGB7CSgP6wlIJKhz9Pj
+
+Twitter QR code had the HTB flag
+
+#Challenge 2
+Email address from CV, send a email, OOO reply gave the HTB
+
+# Challenge 3
+exiftool Samantha_CV.pdf -> for metadata htb

@@ -1,0 +1,61 @@
+# Investigate the xls and extract information.
+
+#1. Load the xls to viper
+
+viper > update-modules
+viper > open -f staff_info.xls
+viper > find all
+viper > sessions -l 
+viper staff_info.xls > office -v
+viper > office -e /htf
+
+# ALternative -> olevba to extract the VB script
+
+olevba staff_info.xls
+
+#2. Understand the code. I used chatgpt to understand the code. 
+https://onecompiler.com/vb
+
+The VBA code is malicious and designed to download and execute additional code on the victim's computer.
+
+Upon opening the Excel workbook, the macro calls the ilsqleepkodh subroutine. This subroutine initializes a string variable iesjxryuarznqnn by concatenating two encoded strings, which together form a URL pointing to a malicious website.
+
+The jgepjdbdud function creates an HTTP request to the URL specified in the iesjxryuarznqnn variable and sends it along with a command output parameter. The response from the server is then returned as a string value.
+
+The srahstpvf function returns a string containing the name of the user's computer and domain.
+
+Finally, the qzycnajrfnguwvha function combines the output from the srahstpvf function and a command output parameter and passes it to the jgepjdbdud function. The response from the server is then returned as a string value.
+
+The macro appears to be designed to download and execute additional code on the victim's computer by making a request to a remote server and then executing the returned code. It is not possible to determine the full extent of the malware's capabilities without further analysis of the downloaded code.
+
+# Put the entire code in https://onecompiler.com/vb/  and analyse.
+
+#3. Extract the piece of code that posts to the malicous site.
+I thought the response would be the HTB flag, but the request itself had it :)
+
+https://onecompiler.com/vb/3z6vtbm7z
+
+Module VBModule
+
+  Sub Main()
+Dim szyytivshjnsnma As String
+Dim iesjxryuarznqnn As String
+iesjxryuarznqnn = ueslqmlgwtze("687474703a2f2f77696e646f77736c697665757064") & ueslqmlgwtze("617465722e636f6d3a383038302f6e657773")
+szyytivshjnsnma = ueslqmlgwtze("73797374656d696e666f26266563686f3d") & ueslqmlgwtze("4854") & Chr(66) & ueslqmlgwtze("7b6d34") & ueslqmlgwtze("637230") & Chr(115) & ueslqmlgwtze("5f73") & Chr(Asc("t")) & ueslqmlgwtze("316c6c") & Chr(95) & ueslqmlgwtze("703073335f345f73") & ueslqmlgwtze("336375") & Chr(Asc("r")) & ueslqmlgwtze("3174795f7231736b7d")
+Console.WriteLine(szyytivshjnsnma)
+Console.WriteLine(iesjxryuarznqnn)
+End Sub
+
+Private Function ueslqmlgwtze(ByVal sdmmvdcrwjuc As String) As String
+Dim gciiwqqjimbq As Long
+For gciiwqqjimbq = 1 To Len(sdmmvdcrwjuc) Step 2
+ueslqmlgwtze = ueslqmlgwtze & Chr$(Val("&H" & Mid$(sdmmvdcrwjuc, gciiwqqjimbq, 2)))
+Next gciiwqqjimbq
+End Function
+
+End Module
+
+# Got the HTB code
+
+# Another easiest way to get is via wireshark, but need to open the excel and allow the macro to run. 
+

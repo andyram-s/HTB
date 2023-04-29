@@ -1,0 +1,50 @@
+# Resources
+
+# Important -> Use a intel x86_64 arch. M1, M2 not supporting docker based tools. Even ltrace was not working.
+
+# Forensics
+
+oletools for macro
+https://github.com/decalage2/oletools
+http://www.decalage.info/python/oletools
+
+# Encoding Decoding cracking
+https://gchq.github.io/CyberChef/
+https://hashcat.net/wiki/
+https://base64.guru/converter/decode/ascii
+
+# Commands -> 
+Tools in oletools:
+Tools to analyze malicious documents
+oleid: to analyze OLE files to detect specific characteristics usually found in malicious files.
+olevba: to extract and analyze VBA Macro source code from MS Office documents (OLE and OpenXML).
+MacroRaptor: to detect malicious VBA Macros
+msodde: to detect and extract DDE/DDEAUTO links from MS Office documents, RTF and CSV
+pyxswf: to detect, extract and analyze Flash objects (SWF) that may be embedded in files such as MS Office documents (e.g. Word, Excel) and RTF, which is especially useful for malware analysis.
+oleobj: to extract embedded objects from OLE files.
+rtfobj: to extract embedded objects from RTF files.
+Tools to analyze the structure of OLE files
+olebrowse: A simple GUI to browse OLE files (e.g. MS Word, Excel, Powerpoint documents), to view and extract individual data streams.
+olemeta: to extract all standard properties (metadata) from OLE files.
+oletimes: to extract creation and modification timestamps of all streams and storages.
+oledir: to display all the directory entries of an OLE file, including free and orphaned entries.
+olemap: to display a map of all the sectors in an OLE file.
+
+
+# OSINT Open Source Intel
+https://osintframework.com
+
+# Finding username
+https://instantusername.com/
+https://www.namecheckr.com
+
+Maltego: Investigations via Java Graphs
+SEON: Best for Social and Digital Signals Checks
+Lampyre: Due Diligence and Cyberthreat Intelligence
+Google: Free OSINT (If You Know How to Use It)
+Recon-ng: Open Source OSINT Framework
+SpiderFoot: Cybersecurity Intelligence
+Spokeo: US Citizen Records Checks
+Have I Been Pwnd?: The Data Breach Go-To
+PhoneInfoga: Python-Based Phone Lookup
+Email Hippo: MX Records Checks for Email Lookup
